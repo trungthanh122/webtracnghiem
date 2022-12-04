@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>To do list app</title>
+		<link href="..//static/bootstrap-4/css/bootstrap.css.min" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+		
+			<div class = "jumptron">
+				<h1>To do list app</h1>
+				<p clas = "lead"></p>
+				<p><a class="btn btn-lg btn-success" href="#">Sign up now<a></p>
+			</div>
+			
+			<div class="row marketing">
+				{% for todoitem in todolist %}
+				<div class="col-sm-4">
+					<h4>{{todoitem.name}}</h4>
+					<p>{{todolist.description</p>
+				</div>
+				{% endfor%}
+			</div>
+			
+		</div>
+	</body>
+</html>

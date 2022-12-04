@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>To do list app</title>
+		<link href="../static/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+	<!--head-->
+		<div class="jumbotron" style="margin-bottom:0">
+			<a class="navbar-brand" href="#">
+				<img src="../static/img/UPT.png" alt="logo" style="height:100px">
+			</a>
+		</div>	
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	
+			<ul class="navbar-nav">
+				<li class="navbar-item">
+					<a class="nav-link" href="/"> Home</a>
+				</li>
+				<li class="navbar-item">
+					<a class="nav-link" href="#"> Sign In</a>
+				</li>
+				<li class="navbar-item">
+					<a class="nav-link active" href="/signUp"> Sign Up</a>
+				</li>
+			</ul>
+		</nav>	
+		<!--end head-->
+		{% block content %}{% endblock %}
+		
+		<!--Footer-->
+		<div class="jumbotron text-center" style="margin-bottom:0">
+			<p>Copyright &copy;2022 by Minh Trieu</p>
+		</div>
+		<!--End Footer-->
+	</body>
+</html>
